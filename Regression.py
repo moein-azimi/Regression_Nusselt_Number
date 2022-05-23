@@ -22,8 +22,6 @@ print(X_train.shape, Y_train.shape)
 print(X_test.shape, Y_test.shape)
 
 model = linear_model.Ridge()
-#model = SVR(C=10, epsilon=100)
-#model = neural_network.MLPRegressor(random_state=10, max_iter=1000)
 model.fit(X_train, Y_train)
 Y_pred = model.predict(X_test)
 Y_test = np.array(Y_test)
