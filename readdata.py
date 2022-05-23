@@ -5,7 +5,7 @@ data.columns = ["A", "M", "S", "L_e","N_t","P_r","N_b","B_i","B_ii","Nu"]
 
 
 for i, item in  enumerate(data['Nu']):
-    data['Nu'].iloc[i] = float(str(item).replace("HFloat("," ").replace(")",""))
+    data['Nu'].iloc[i] = str(item).replace("HFloat("," ").replace(")","")
 
 print(data.head())
 
